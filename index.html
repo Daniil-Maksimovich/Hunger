@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger</title>
+    <link rel="shortcut icon" href="./assets/images/wheel.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/media.css">
+    <script src="./assets/scripts/index.js"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__menu">
+                    <a data-url="header" href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">team</a>
+                    <a data-url="booking" href="#">booking</a>
+                </div>
+                <div class="navbar__menu">
+                    <a data-url="menu" href="#">menu</a>
+                    <a data-url="slider" href="#">galerie</a>
+                    <a data-url="events" href="#">events</a>
+                    <a href="#">contacts</a>
+                </div>
+                <img class="navbar__img" src="./assets/images/wheel.png" alt="Logo">
+                <div class="burger-menu">
+                    <div class="burger-menu__button">
+                        <span></span>
+                    </div>
+                    <div class="burger-menu__nav">
+                        <div class="burger-menu__nav__wrapper">
+                            <a data-url="header" href="#">Home</a>
+                            <a data-url="booking" href="#">Booking</a>
+                            <a data-url="menu" href="#">Menu</a>
+                            <a data-url="slider" href="#">galerie</a> 
+                            <a data-url="events" href="#">events</a>
+                        </div>
+                    </div>
+                    <div class="burger-menu__overlay"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="header__intro__working-period">
+                <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+            </div>
+            <div class="container">
+                <div class="header__intro">
+                    <div class="header__intro__content">
+                        <div class="heading">
+                            <p>Restaurant</p>
+                        </div>
+                        <h1 class="after">hungry people</h1>
+                        <a href="#">Book table</a>
+                        <a href="#">Explore</a>
+                        <div class="scroll-button">
+                            <span>
+                                <img src="./assets/images/scroll-button.png" alt="scroll">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header__intro__links">
+                        <a href="#">
+                            <img src="./assets/images/facebook.png" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/twitter.png" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/insta.png" alt="insta">
+                        </a>
+                    </div>
+                    <div class="header__intro__central-line">
+            
+                    </div>
+                </div>
+            </div>
+            <div class="timer">
+                <h1>Left:
+                    <span class="min">
+                        14 :
+                    </span>
+                    <span class="sec">
+                        00
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <section class="booking">
+        <div class="container">
+            <div class="booking__content">
+                <h2 class="after">Book a table</h2>
+                <form>
+                    <div class="input-block">
+                        <input required type="text" placeholder="Name">
+                        <input required type="email" placeholder="Email">
+                    </div>
+                    <div class="input-block">
+                        <input required type="number" placeholder="Phone">
+                        <select>
+                            <option value="default">People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <input required class="input-date" type="text" placeholder="Date (mm/dd)"/>
+                        <select>
+                            <option value="default">Time</option>
+                            <option value="8">8PM</option>
+                            <option value="9">9PM</option>
+                            <option value="10">10PM</option>
+                            <option value="11">11PM</option>
+                            <option value="12">12PM</option>
+                            <option value="1">1AM</option>
+                            <option value="2">2AM</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Book now">
+                </form>
+            </div>
+            <div class="img-block">
+                <img src="./assets/images/booking.png" alt="Booking">
+                <div class="img-block__border">
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>
+                Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, 
+                Phone: <a href="tel:+40 729 131 637">
+                    <b>+40 729 131 637</b>
+                </a> / 
+                <a href="tel:+40 726 458 782">
+                    <b>+40 726 458 782</b>
+                </a>
+            </p>
+        </footer>
+    </section>
+    <section class="slider">
+        <div class="heading">
+            <p>specialties</p>
+        </div>
+        <div class="container">
+            <input id="slide-1" type="radio" name="slides">
+            <div class="slide">
+                <div class="img-block">
+                    <img src="./assets/images/event_1.png" alt="food">
+                    <div class="img-block__border"></div>
+                </div>
+                <div class="slide__content">
+                    <h2 class="after">Chocolate pancake</h2>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+                    <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                    ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                    pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+            <input id="slide-2" type="radio" name="slides" checked>
+            <div class="slide">
+                <div class="img-block">
+                    <img src="./assets/images/pancake.png" alt="food">
+                    <div class="img-block__border"></div>
+                </div>
+                <div class="slide__content">
+                    <h2 class="after">Chocolate pancake</h2>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+                    <p>
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                    ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                    pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+            <input id="slide-3" type="radio" name="slides">
+            <div class="slide">
+                <div class="img-block">
+                    <img src="./assets/images/booking.png" alt="food">
+                    <div class="img-block__border"></div>
+                </div>
+                <div class="slide__content">
+                    <h2 class="after">Chocolate pancake</h2>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+                    <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider__buttons">
+            <label for="slide-1"></label>
+            <label for="slide-2" class="active"></label>
+            <label for="slide-3"></label>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="heading">
+            <h2 class="after">Delicious menu</h2>
+            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+        </div>
+        <div class="container">
+            <div class="menu__options">
+                <a href="#">Soupe</a>
+                <a href="#">Pizza</a>
+                <a href="#">Pasta</a>
+                <a href="#">Desert</a>
+                <a href="#">Wine</a>
+                <a href="#">Beer</a>
+                <a href="#">Drinks</a>
+                <div class="menu__options__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu__content">
+                <div class="menu__content__block">
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                </div>
+                <div class="menu__content__block">
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                </div>
+                <div class="menu__content__block">
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__content__block__item">
+                        <h3>PIZZA QUATRO STAGIONI &#160 . . . . &#160 55,68 USD </h3>
+                        <p>Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="heading">
+            <p>PRIVATE EVENTS</p>
+        </div>
+        <div class="container">
+            <div class="events__content">
+                <div class="img-block">
+                    <img src="./assets/images/event_1.png" alt="event">
+                    <div class="img-block__border"></div>
+                    <div class="img-block__content">
+                        <h2>Weddings</h2>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img src="./assets/images/event_2.png" alt="event">
+                    <div class="img-block__border"></div>
+                    <div class="img-block__content">
+                        <h2>corporate pzrties</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>
+                For private events please call: 
+                <a href="tel:+40 729 131 637">
+                    <b>+40 729 131 637</b>
+                </a> / 
+                <a href="tel:+40 726 458 782">
+                    <b>+40 726 458 782</b>
+                </a> 
+                or use the contact form.
+        </footer>
+    </section>
+</body>
+</html>
